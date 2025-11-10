@@ -1,0 +1,10 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import About from '@/components/pages/about'
+
+const title = 'À Propos'
+---
+
+<Layout title={title}>
+  <About client:load />
+</Layout>

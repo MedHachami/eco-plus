@@ -1,0 +1,24 @@
+---
+import '@/styles/globals.css'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <title>{title} - Eco PacPlus | Pompe à Chaleur (PAC)</title>
+  </head>
+  <body>
+    <Header client:load />
+    <main>
+      <slot />
+    </main>
+    <Footer client:load />
+  </body>
+</html>

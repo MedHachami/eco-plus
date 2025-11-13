@@ -37,11 +37,11 @@ export default function ValueProposition() {
   ]
 
   return (
-    <section className="py-16 md:py-24 px-4">
+    <section className="py-16 md:py-24 px-4 bg-[#A0A083]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Pourquoi Choisir Eco PacPlus ?</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-[#EAE0CC]">Pourquoi Choisir Eco PacPlus ?</h2>
+          <p className="text-lg text-[#EAE0CC] max-w-2xl mx-auto">
             Expert reconnu en pompes à chaleur, nous vous garantissons économies, confort et respect de l'environnement
           </p>
         </div>
@@ -49,13 +49,21 @@ export default function ValueProposition() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {values.map((value, index) => {
             const Icon = value.icon
+            const colorClasses = [
+              "text-primary border-primary/30 hover:bg-primary/5",
+              "text-secondary border-secondary/30 hover:bg-secondary/5",
+              "text-accent border-accent/30 hover:bg-accent/5",
+              "text-chart-1 border-chart-1/30 hover:bg-chart-1/5",
+              "text-chart-2 border-chart-2/30 hover:bg-chart-2/5",
+              "text-primary border-primary/30 hover:bg-primary/5",
+            ]
             return (
               <div
-                key={index}
-                className="p-6 rounded-lg border border-border hover:border-primary/50 hover:bg-secondary/30 transition-all"
+                key={value.title}
+                className={`Card p-6 rounded-lg border ${colorClasses[index % 6]} border border-[#EAE0CC] hover:border-opacity-100 transition-all duration-300 hover:shadow-xl hover:scale-105`}
               >
-                <Icon className="w-12 h-12 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
+                <Icon className="w-12 h-12 mb-4" />
+                <h3 className="text-xl font-semibold mb-2 text-[#EAE0CC]">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
               </div>
             )

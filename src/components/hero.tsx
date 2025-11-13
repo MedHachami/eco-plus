@@ -2,13 +2,13 @@
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background via-background to-secondary/5 px-4 py-12">
+    <section className="min-h-screen flex items-center justify-center bg-[#EAE0CC] from-background via-background to-secondary/5 px-4 py-12">
       <div className="max-w-4xl mx-auto text-center space-y-6">
-        <div className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+        <div className="inline-block px-4 py-2 rounded-full bg-[#A0A083] border border-[#C9ADA1] hover:bg-[#798478] transition-colors">
           <p className="text-sm font-medium text-accent">Énergie Renouvelable</p>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance">
+        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-[#798478]">
           Pompe à Chaleur (PAC) : Économies d'Énergie Garanties
         </h1>
 
@@ -26,7 +26,7 @@ export default function Hero() {
           </a>
           <a
             href="/about"
-            className="px-8 py-3 rounded-lg border border-border text-foreground font-semibold hover:bg-secondary/50 transition-colors"
+            className="px-8 py-3 rounded-lg border border-border text-foreground font-semibold hover:bg-[#798478] transition-colors"
           >
             En Savoir Plus
           </a>

@@ -35,7 +35,7 @@ export default function ValueProposition() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 border border-border hover:border-accent transition-colors"
+                className="bg-card rounded-xl p-8 border border-border hover:border-accent transition-colors"
               >
                 <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-accent" />

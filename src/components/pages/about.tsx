@@ -6,11 +6,11 @@ export default function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-b from-primary/5 to-background">
+      <section className="py-16 md:py-24 px-4 bg-[#EAE0CC]">
         <div className="max-w-6xl mx-auto">
           <div className="space-y-6 mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight">À Propos d'Eco PacPlus</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-[#798478]">À Propos d'Eco PacPlus</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl text-[#798478">
               Expert reconnu en installation et maintenance de pompes à chaleur depuis plus de 20 ans. Réduisez vos factures énergétiques jusqu'à 70%
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function About() {
               { number: "30+", label: "Artisans RGE" },
               { number: "70%", label: "Économies Moyennes" },
             ].map((stat, i) => (
-              <div key={i} className="p-6 rounded-lg bg-card border border-border">
+              <div key={i} className="p-6 rounded-lg bg-card border border-[#798478]">
                 <p className="text-4xl font-bold text-primary mb-2">{stat.number}</p>
                 <p className="text-muted-foreground">{stat.label}</p>
               </div>
@@ -33,7 +33,7 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-16 md:py-24 px-4">
+      <section className="py-16 md:py-24 px-4 bg-[#A0A083]">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -47,13 +47,13 @@ export default function About() {
               <div className="flex gap-4">
                 <a
                   href="/contact"
-                  className="px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                  className="sm:inline-block px-8 py-3 rounded-lg  border border-border  text-foreground font-semibold hover:bg-[#798478] transition-colors"
                 >
                   Audit Gratuit
                 </a>
                 <a
                   href="tel:0182888449"
-                  className="px-6 py-3 rounded-lg border border-border text-foreground font-semibold hover:bg-secondary/50 transition-colors"
+                  className="sm:inline-block px-8 py-3 rounded-lg  border border-border  text-foreground font-semibold hover:bg-[#798478] transition-colors"
                 >
                   Nous Appeler
                 </a>
@@ -80,29 +80,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Preview */}
-      <section className="py-16 md:py-24 px-4 bg-secondary/30">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">Notre Équipe</h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Plus de 30 artisans RGE certifiés spécialisés en pompes à chaleur, prêts à réaliser votre projet avec expertise et professionnalisme
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow"
-              >
-                <img src="/placeholder-user.jpg" alt="Artisan RGE" className="w-full h-64 object-cover" />
-                <div className="p-6 bg-card">
-                  <h3 className="font-semibold text-lg mb-1">Artisan RGE {i}</h3>
-                  <p className="text-sm text-muted-foreground">Expert en Pompes à Chaleur</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

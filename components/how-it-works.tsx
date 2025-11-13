@@ -37,7 +37,7 @@ export default function HowItWorks() {
         <div className="grid md:grid-cols-4 gap-6">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              <div className="bg-white rounded-xl border border-border p-8 h-full">
+              <div className="bg-card rounded-xl border border-border p-8 h-full">
                 <div className="text-3xl font-bold text-accent mb-4">{step.number}</div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>

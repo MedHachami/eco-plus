@@ -24,7 +24,7 @@ export default function Coverage() {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl border border-border p-12">
+        <div className="bg-card rounded-xl border border-border p-12">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {regions.map((region, index) => (
               <div

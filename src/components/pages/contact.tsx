@@ -28,17 +28,17 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <div className="bg-[#EAE0CC]">
       {/* Hero Section */}
-      <section className="py-12 md:py-16 px-4 bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
+      <section className="py-12 md:py-16 px-4 bg-[#EAE0CC]">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Devis Gratuit pour Votre PAC</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-[#798478]">Devis Gratuit pour Votre PAC</h1>
           <p className="text-xl text-muted-foreground mb-4">Audit énergétique gratuit - 20+ ans d'expertise</p>
           <a
             href="tel:0182888449"
             className="text-3xl md:text-4xl font-bold text-primary hover:text-primary/80 transition-colors"
           >
-            01 82 88 84 49
+            +33 7 45 88 58 15
           </a>
         </div>
       </section>
@@ -49,14 +49,15 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6">Informations de Contact</h2>
+              <h2 className="text-2xl font-bold mb-6 text-[#798478]">Informations de Contact</h2>
 
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold">Téléphone</p>
-                    <p className="text-muted-foreground">01 82 88 84 49</p>
+                    <p className="text-muted-foreground"> +33 7 45 88 58 15
+                    </p>
                   </div>
                 </div>
 
@@ -64,7 +65,7 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-muted-foreground">contact@eco-pacplus.fr</p>
+                    <p className="text-muted-foreground">contact@eco-pacplus.com</p>
                   </div>
                 </div>
 
@@ -72,7 +73,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold">Adresse</p>
-                    <p className="text-muted-foreground">France</p>
+                    <p className="text-muted-foreground">21 Rue Médéric Clichy, Île-de-France</p>
                   </div>
                 </div>
 
@@ -116,7 +117,7 @@ export default function Contact() {
           {/* Form */}
           <div className="lg:col-span-2">
             <div className="bg-card p-8 rounded-lg border border-border">
-              <h2 className="text-2xl font-bold mb-6">Demander un Devis Gratuit</h2>
+              <h2 className="text-2xl font-bold mb-6 text-[#798478]">Demander un Devis Gratuit</h2>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -216,7 +217,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                  className="w-full sm:inline-block px-8 py-3 rounded-lg  border border-border  text-foreground font-semibold hover:bg-[#798478] transition-colors"
                 >
                   Envoyer la Demande
                 </button>

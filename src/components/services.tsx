@@ -27,11 +27,11 @@ export default function Services() {
   ]
 
   return (
-    <section className="py-16 md:py-24 px-4">
+    <section className="py-16 md:py-24 px-4 bg-[#EAE0CC]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Nos Services</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-[#A0A083] max-w-2xl mx-auto">
             Installation, maintenance et conseil en pompes à chaleur pour particuliers et professionnels
           </p>
         </div>
@@ -39,12 +39,20 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon
+            const colorClasses = [
+              "bg-primary/10 text-primary hover:bg-primary/20",
+              "bg-secondary/10 text-secondary hover:bg-secondary/20",
+              "bg-accent/10 text-accent hover:bg-accent/20",
+              "bg-chart-1/10 text-chart-1 hover:bg-chart-1/20",
+            ]
             return (
               <div
-                key={index}
-                className="p-6 rounded-lg bg-card border border-border hover:border-primary/50 hover:shadow-lg transition-all"
+                key={service.title}
+                className="p-6 rounded-lg bg-card transition-all duration-300 hover:shadow-xl hover:scale-105 rounded-xl border border-[#A0A083] p-6 "
               >
-                <Icon className="w-12 h-12 text-primary mb-4" />
+                <div className={`w-12 h-12 rounded-lg ${colorClasses[index % 4]} flex items-center justify-center mb-4 transition-colors`}>
+                  <Icon className="w-6 h-6" />
+                </div>
                 <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
                 <p className="text-muted-foreground text-sm">{service.description}</p>
               </div>

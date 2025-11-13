@@ -53,7 +53,7 @@ export default function FAQ() {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-border rounded-lg overflow-hidden bg-white transition-all">
+            <div key={index} className="border border-border rounded-lg overflow-hidden bg-card transition-all">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-4 flex justify-between items-center hover:bg-muted/50 transition"

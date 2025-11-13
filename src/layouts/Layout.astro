@@ -5,14 +5,101 @@ import Footer from '@/components/footer'
 
 const { title } = Astro.props
 ---
-
-<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-    <title>{title} - Eco PacPlus | Pompe à Chaleur (PAC)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Performance Optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fallback for CSS -->
+   
+    <noscript><link rel="stylesheet" href="/styles/global.css" /></noscript>
+
+    <title>
+      Installation Pompe à Chaleur France | Devis Gratuit
+    </title>
+    <meta
+      name="description"
+      content="Spécialiste en installation de pompes à chaleur air-eau et air-air en France. Réduisez vos factures de chauffage jusqu'à 70%. Devis gratuit, certifié RGE."
+    />
+    <meta
+      name="keywords"
+      content="
+          pompe à chaleur france,
+          installation pompe à chaleur,
+          installation PAC france,
+          devis gratuit pompe à chaleur,
+          subvention pompe à chaleur france,
+          aide etat pompe à chaleur,
+          réduction facture chauffage,
+          meilleur installateur PAC france,
+          installateur RGE pompe à chaleur,
+          prix pompe à chaleur france,
+          pompe à chaleur air-eau,
+          pompe à chaleur air-air,
+          entreprise installation PAC,
+          chauffage pompe à chaleur maison,
+          installer pompe à chaleur aides,
+          solution énergie renouvelable france,
+          pompe à chaleur réversible,
+          remplacement chaudière PAC,
+          crédit d'impôt pompe à chaleur,
+          prime énergie pompe à chaleur,
+          pompe à chaleur rentable,
+          économies chauffage pompe à chaleur,
+          installation PAC maison,
+          chauffage écologique france,
+          transition énergétique pompe à chaleur
+"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.eco-pacplus.com" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Installation Pompe à Chaleur France - Devis Gratuit | Chauffage Écologique France"
+    />
+    <meta
+      property="og:description"
+      content="Réduisez vos factures de chauffage jusqu'à 70% avec nos pompes à chaleur. Installation certifiée RGE partout en France."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.eco-pacplus.com/"
+    />
+    <!-- <meta
+      property="og:image"
+      content="https://www.eco-pacplus.com/modern-heat-pump-installation-french-house.png"
+    /> -->
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Pompe à Chaleur France",
+        "description": "Spécialiste installation pompes à chaleur en France",
+        "url": "https://www.eco-pacplus.com/",
+        "telephone": "+33745885815",
+        "email": "contact@eco-pacplus.com",
+        "areaServed": "France",
+        "serviceType": "Installation pompe à chaleur",
+        "priceRange": "€€€"
+      }
+    </script>
   </head>
   <body>
     <Header client:load />

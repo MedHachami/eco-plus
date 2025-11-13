@@ -6,25 +6,25 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-[#A0A083] backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">PAC</span>
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-md">
+              <img src="/ecopacplus-logo.png" alt="eco-pacplus-logo" className="w-14 h-10" />
             </div>
-            <span className="font-bold text-lg hidden sm:inline">Eco PacPlus</span>
+            {/* <span className="font-bold text-lg hidden sm:inline bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Eco PacPlus</span> */}
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="/" className="text-sm font-medium hover:text-primary transition-colors">
+          <nav className="hidden md:flex items-center  gap-8 tex-black">
+            <a href="/" className="text-sm font-medium  hover:text-[#798478] transition-colors">
               Accueil
             </a>
-            <a href="/about" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="/about" className="text-sm font-medium hover:text-[#798478] transition-colors">
               À Propos
             </a>
-            <a href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="/contact" className="text-sm font-medium hover:text-[#798478] transition-colors">
               Contact
             </a>
           </nav>
@@ -32,7 +32,7 @@ export default function Header() {
           {/* CTA Button */}
           <a
             href="/contact"
-            className="hidden sm:inline-block px-4 py-2 rounded-lg bg-accent text-accent-foreground font-medium text-sm hover:opacity-90 transition-opacity"
+            className="hidden sm:inline-block px-8 py-3 rounded-lg  border border-border  text-foreground font-semibold hover:bg-[#798478] transition-colors"
           >
             Devis Gratuit
           </a>

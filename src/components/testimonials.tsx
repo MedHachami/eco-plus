@@ -25,10 +25,10 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-secondary/30">
+    <section className="py-16 md:py-24 px-4 bg-[#EAE0CC]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Témoignages Clients</h2>
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Témoignages Clients</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Plus de 5000 installations réalisées avec satisfaction. Découvrez les retours de nos clients
           </p>
@@ -36,10 +36,10 @@ export default function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-8 rounded-lg bg-card border border-border hover:shadow-lg transition-shadow">
+            <div key={index} className="p-8 rounded-lg bg-card border-2 border-black hover:border-accent/50 hover:shadow-lg transition-all">
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} color="#C9ADA1" className="w-5 h-5 fill-accent text-accent " />
                 ))}
               </div>
               <p className="text-foreground mb-6 italic">"{testimonial.text}"</p>

@@ -63,7 +63,7 @@ export default function Process() {
 
                       {/* Main number box */}
                       <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary/90 text-primary-foreground rounded-2xl flex items-center justify-center font-bold text-3xl relative overflow-hidden">
-                        <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-foreground/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         {step.number}
                       </div>
 

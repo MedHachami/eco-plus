@@ -6,26 +6,26 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-[#A0A083] text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary-foreground/20 flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">PAC</span>
+              <div className="w-16 h-12 rounded-lg bg-gradient-to-br from-primary-foreground/30 to-accent/30 flex items-center justify-center">
+                <img src="/ecopacplus-logo.png" alt="eco-pacplus-logo" className="w-8 h-8" />
+
               </div>
-              <span className="font-bold text-lg">Eco PacPlus</span>
             </div>
-            <p className="text-sm opacity-90">Expert en installation et maintenance de pompes à chaleur pour un chauffage économique et écologique.</p>
+            <p className="text-black opacity-90 font-semibold">Expert en installation et maintenance de pompes à chaleur pour un chauffage économique et écologique.</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Liens Rapides</h3>
+            <h3 className="font-semibold mb-4 text-[#EAE0CC]">Liens Rapides</h3>
             <ul className="space-y-2 text-sm opacity-90">
               <li>
-                <a href="/" className="hover:opacity-100 transition-opacity">
+                <a href="/" className="hover:opacity-100 transition-opacity ">
                   Accueil
                 </a>
               </li>
@@ -44,7 +44,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4 text-[#EAE0CC]">Services</h3>
             <ul className="space-y-2 text-sm opacity-90">
               <li>Installation PAC</li>
               <li>Maintenance & Réparation</li>
@@ -54,18 +54,18 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
+            <h3 className="font-semibold mb-4 text-[#EAE0CC]">Contact</h3>
             <ul className="space-y-2 text-sm opacity-90">
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                <a href="tel:0182888449" className="hover:opacity-100 transition-opacity">
-                  01 82 88 84 49
+                <a href="tel:+33 74 58 85 815" className="hover:opacity-100 transition-opacity">
+                  +33 7 45 88 58 15
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} />
-                <a href="mailto:contact@eco-pacplus.fr" className="hover:opacity-100 transition-opacity">
-                  contact@eco-pacplus.fr
+                <a href="mailto:contact@eco-pacplus.com" className="hover:opacity-100 transition-opacity">
+                  contact@eco-pacplus.com
                 </a>
               </li>
             </ul>
